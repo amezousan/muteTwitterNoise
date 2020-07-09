@@ -1,0 +1,11 @@
+{
+  "name": "muteTwitterNoise",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "mute twitter noise",
+  "content_scripts": [{
+    "matches"    : [ "*://twitter.com/*" ],
+    "run_at"     : "document_end",
+    "css"        : ["contentBlock.css"]
+  }]
+}

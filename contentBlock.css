@@ -1,0 +1,13 @@
+/***
+ * Mute followers
+ */
+div[data-testid="primaryColumn"] > div > div > div > div > div > div > div > div > a[href$="/followers"] {
+    display:none !important;
+}
+
+/***
+ * Mute everything except for the first element (it's usually Search)
+ */
+div[data-testid="sidebarColumn"] > div > div > div > div > div > div:not(:nth-child(1)) {
+    display:none !important;
+}
